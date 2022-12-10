@@ -48,11 +48,6 @@ public class BurgerTests {
         Mockito.when(ketchup.getType()).thenReturn(IngredientType.SAUCE);
     }
 
-    @After
-    public void shutdown() {
-        burger.ingredients.clear();
-        burger.bun = null;
-    }
 
     @Test
     public void shouldSetBunInBurger() {
