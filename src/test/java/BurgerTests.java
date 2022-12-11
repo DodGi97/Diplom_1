@@ -71,7 +71,7 @@ public class BurgerTests {
 
     @Test
     public void shouldMoveIngredientsInBurger() {
-        burger.moveIngredient(1, 2);
+        burger.moveIngredient(0, 2);
 
         Assert.assertEquals("Ожидалось, что индекс ингредиента ЛУЧОК будет равен 2",
                 2, burger.ingredients.indexOf(cheese));
